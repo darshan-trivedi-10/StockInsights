@@ -17,16 +17,18 @@ async function saveDataToDb(data) {
     await NewsModel.insertMany(data);
   } catch (error) {
     console.error("Error while saving data:", error);
+    throw error;
   }
 }
 
-async function storeData() {
+async function storeDataHelper() {
   try {
     const bseData = await readDataFromFile();
     await saveDataToDb(bseData);
   } catch (error) {
     console.error("Error:", error);
+    throw error;
   }
 }
 
-export default storeData;
+export default storeDataHelper;

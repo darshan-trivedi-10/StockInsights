@@ -3,6 +3,7 @@ import mongoose from "mongoose";
 const newsSchema = new mongoose.Schema({
   NEWSID: {
     type: String,
+    unique : true
   },
   SCRIP_CD: {
     type: Number,

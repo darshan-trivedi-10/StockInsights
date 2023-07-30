@@ -7,6 +7,6 @@ const newsController = new NewsController();
 
 router.get("/dataprocessing/start", newsController.storeData);
 
-router.get("/announcements");
+router.get("/announcements", newsController.getAnnouncements);
 
 export default router;

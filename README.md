@@ -3,6 +3,7 @@
 ## Backend Deloyment 
 - https://stock-insights.onrender.com/
 
+## API Routes
 - API to store JSON data in MongoDB
 ```
 GET http://localhost:5000/api/dataprocessing/start
